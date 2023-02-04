@@ -14,16 +14,16 @@
         "test": "node test.js",
         "test2": "nodemon index.js"
     },
-    "homepage": "https://github.com/ALBERTO9883/NyanCatBot-MD",
+    "homepage": "https://github.com/Whats-bot/Gbot",
     "author": {
         "name": "Alberto Acosta"
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/ALBERTO9883/NyanCatBot-MD.git"
+        "url": "git+https://github.com/Whats-bot/Gbot.git"
     },
     "bugs": {
-        "url": "https://github.com/ALBERTO9883/NyanCatBot-MDissues"
+        "url": "https://github.com/Whats-bot/Gbot/issues"
     },
     "license": "GPL-3.0-or-later",
     "dependencies": {
