@@ -49,43 +49,43 @@ let handler = async (m, { conn, usedPrefix: _p, args, command, __dirname }) => {
   'vote': 'Votaciones🗳',
   }
   if (teks == 'game') tags = {
-    'game': 'Juegos🕹'
+    'game': 'Игры🕹'
   }
   if (teks == 'xp') tags = {
-    'xp': 'Nivel Y Economía⚖'
+    'xp': 'Конвертер⚖'
   }
   if (teks == 'stiker') tags = {
-    'sticker': 'Sticker🏞'
+    'sticker': 'Стикеры🏞'
   }
   if (teks == 'nime') tags = {
-    'nime': 'Anime㊗'
+    'nime': 'Аниме㊗'
   }
   if (teks == 'rpg') tags = {
-    'rpg': 'RPG⚔'
+    'rpg': 'РПГ⚔'
   }
   if (teks == 'rg') tags = {
-    'rg': 'Registro🗃'
+    'rg': 'Регистрация🗃'
   }
   if (teks == 'frases') tags = {
     'frases': 'Frases🥀'
   }
   if (teks == 'premium') tags = {
-    'premium': 'Premium🪪'
+    'premium': 'Премиум🪪'
   }
   if (teks == 'img') tags = {
-    'img': 'Imágenes🪴'
+    'img': 'Изображения🪴'
   }
   if (teks == 'group') tags = {
-    'group': 'Grupo👻'
+    'group': 'Меню группы👻'
   }
   if (teks == 'logo') tags = {
-    'logo': 'Maker Y Logos📝'
+    'logo': 'Создание логотипов📝'
   }
   if (teks == 'nable') tags = {
-    'nable': 'Des/Activar opciones⚙'
+    'nable': 'Включение/Выключение функций⚙'
   }
   if (teks == 'tools') tags = {
-    'tools': 'Herramientas🧰'
+    'tools': 'Инструменты🧰'
   }
   if (teks == 'fun') tags = {
     'fun': 'Diversión🎭'
