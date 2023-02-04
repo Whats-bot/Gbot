@@ -105,7 +105,7 @@ global.timestamp.connect = new Date
 }
 if (global.db.data == null) loadDatabase()
 if (connection == 'open') {
-console.log(chalk.greenBright('╭───────────────────────────◉\n│\n│🌺◌*̥₊ 𝙲𝚘𝚗𝚎𝚌𝚝𝚊𝚍𝚘 𝙲𝚘𝚛𝚛𝚎𝚌𝚝𝚊𝚖𝚎𝚗𝚝𝚎.\n│\n╰───────────────────────────◉'))}
+console.log(chalk.greenBright('╭───────────────────────────◉\n│\n│🌺◌*̥₊ Создано успешное подключение.\n│\n╰───────────────────────────◉'))}
 }
 
 process.on('uncaughtException', console.error)
@@ -135,10 +135,10 @@ conn.ev.off('connection.update', conn.connectionUpdate)
 conn.ev.off('creds.update', conn.credsUpdate)
 }
   
-conn.welcome = '*• Holaa :D Bienvenido/a al grupo!!*\n*━━━━━━━━━━━━━━━━*\n\n🌺 *• Nombre:* @user\n🌿 *• Bio:* @bio\n🕒 *• Hora:* @time\n🗓️ *• Fecha:* @date\n\n- *recuerda leer las reglas del grupo* -'
-conn.bye = '*👋 Hasta pronto, no te extrañaremos XD!!*\n*━━━━━━━━━━━━━━━━*\n\n🐢 *• Nombre:* @user\n🎋 *• Bio:* @bio\n🕒 *• Hora:* @time\n🗓️ *• Fecha:* @date\n\n- *Salúdame a Maradona bro* -'
-conn.spromote = '*⎡ •⚠️ Nuevo Admin detectado ⚠️• ⎦*\n*━━━━━━━━━━━━━━━━*\n🐢 *• Nombre:* @user\n🕒 *• Hora:* @time\n🗓️ *• Fecha:* @date\n*━━━━━━━━━━━━━━━━*'
-conn.sdemote = '❏ 🍃 *_@user ha dejado de ser administrador._*'
+conn.welcome = '*• Добро пожаловать :D У нас новый участник!!*\n*━━━━━━━━━━━━━━━━*\n\n🌺 *• Номер:* @user\n🌿 *• Статус:* @bio\n🕒 *• Время:* @time\n🗓️ *• Дата:* @date\n\n- *Добро пожаловать в наш дружный коллектив* -'
+conn.bye = '*👋 Нас покинул участник XD!!*\n*━━━━━━━━━━━━━━━━*\n\n🐢 *• Номер:* @user\n🎋 *• Статус:* @bio\n🕒 *• Время:* @time\n🗓️ *• Дата:* @date\n\n- *Скатетью дорога* -\n\n- *И фирменный пинок от Джокера)))'
+conn.spromote = '*⎡ •⚠️ Обнаружено повышение участника группы ⚠️• ⎦*\n*━━━━━━━━━━━━━━━━*\n🐢 *• Номер:* @user\n🕒 *• Время:* @time\n🗓️ *• Дата:* @date\n\n- Поприветствуем нового админа группы)))\n*━━━━━━━━━━━━━━━━*'
+conn.sdemote = '❏ 🍃 *_@user Больше не является админом._*'
 conn.sDesc = '❏ 🍃 *_Se ha modificado la descripción del grupo._*\n\n*Nueva Descripción:* @desc'
 conn.sSubject = '❏ 🍃 *_Se ha modificado el nombre del grupo._*\n*Nuevo Nombre:* @subject'
 conn.sIcon = '❏ 🍃 *_Se ha cambiado la foto del grupo._*'
@@ -228,5 +228,5 @@ var a = await clearTmp()
 console.log(chalk.cyanBright(`\n╭───────────「 𝐀𝐔𝐓𝐎-𝐂𝐋𝐄𝐀𝐑𝐓𝐌𝐏 」───────────◉ \n│\n│🍁◌*̥₊ 𝙰𝚛𝚌𝚑𝚒𝚟𝚘𝚜 𝚎𝚕𝚒𝚖𝚒𝚗𝚊𝚍𝚘𝚜. ✅\n│\n╰─────────────────────────────────────────◉\n`))
 }, 180000)
 _quickTest()
-.then(() => conn.logger.info(`𝐂𝐚𝐫𝐠𝐚𝐧𝐝𝐨．．．\n`))
+.then(() => conn.logger.info(`Минутку ожидания．．．\n`))
 .catch(console.error)

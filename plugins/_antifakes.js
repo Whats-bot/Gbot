@@ -4,9 +4,9 @@ import db from '../lib/database.js'
 let handler = m => m
 
 handler.before = async function (m, { conn, command, MessageType, text, isBotAdmin }) {
-let fproducto2 = { key: { fromMe: false, participant: `0@s.whatsapp.net`, ...(false ? { remoteJid: "status@broadcast" } : {})}, message: { "productMessage": { "product": { "productImage":{ "mimetype": "image/jpeg", "jpegThumbnail": catalogo }, "title": `⚠️ANTI-FAKES⛾`, "retailerId": "🐱⸽⃕NʏᴀɴCᴀᴛBᴏᴛ - MD🍁⃨፝⃕✰", "productImageCount": 1 }, "businessOwnerJid": `0@s.whatsapp.net` }}}
+let fproducto2 = { key: { fromMe: false, participant: `0@s.whatsapp.net`, ...(false ? { remoteJid: "status@broadcast" } : {})}, message: { "productMessage": { "product": { "productImage":{ "mimetype": "image/jpeg", "jpegThumbnail": catalogo }, "title": `⚠️Антиараб⛾`, "retailerId": "꧁༺joKeR༻꧂", "productImageCount": 1 }, "businessOwnerJid": `0@s.whatsapp.net` }}}
 let chat = global.db.data.chats[m.chat]
-let fakebye = `*_👋 Hola @${m.sender.split`@`[0]} por seguridad en este grupo no se permiten números con tú código de área, por lo cual serás eliminado del grupo.⛾_*`
+let fakebye = `*_👋 Привет @${m.sender.split`@`[0]} в целях безопасности в этой группе запрещены номера с вашим кодом города, поэтому вы будете удалены из группы.⛾_*`
 if (chat.antiFake && isBotAdmin) {
    if (m.sender.startsWith('212' || '212')) {
    	global.db.data.users[m.sender].banned = false
@@ -38,12 +38,7 @@ conn.groupParticipantsUpdate(m.chat, [m.sender], 'remove')
 await conn.reply(m.chat, fakebye, fproducto2, { mentions: [m.sender] })
 conn.groupParticipantsUpdate(m.chat, [m.sender], 'remove')
    } 
-   if (m.sender.startsWith('7' || '7')) {
-   	global.db.data.users[m.sender].banned = true
-await conn.reply(m.chat, fakebye, fproducto2, { mentions: [m.sender] })
-conn.groupParticipantsUpdate(m.chat, [m.sender], 'remove')
-   } 
-   if (m.sender.startsWith('55' || '55')) {
+      if (m.sender.startsWith('55' || '55')) {
    	global.db.data.users[m.sender].banned = true
 await conn.reply(m.chat, fakebye, fproducto2, { mentions: [m.sender] })
 conn.groupParticipantsUpdate(m.chat, [m.sender], 'remove')
@@ -68,12 +63,7 @@ conn.groupParticipantsUpdate(m.chat, [m.sender], 'remove')
 await conn.reply(m.chat, fakebye, fproducto2, { mentions: [m.sender] })
 conn.groupParticipantsUpdate(m.chat, [m.sender], 'remove')
    } 
-   if (m.sender.startsWith('380' || '380')) {
-   	global.db.data.users[m.sender].banned = true
-await conn.reply(m.chat, fakebye, fproducto2, { mentions: [m.sender] })
-conn.groupParticipantsUpdate(m.chat, [m.sender], 'remove')
-   } 
-   }
+      }
    return !0
     }
 
