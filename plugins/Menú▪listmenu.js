@@ -4,11 +4,11 @@ import { join } from 'path'
 import fetch from 'node-fetch'
 const defaultMenu = {
   before: `
-*┏━「🐱⸽⃕NʏᴀɴCᴀᴛBᴏᴛ-MD🍁⃨፝⃕✰」━⊜*
-┃⋄ 👋 *Hola %taguser!!*
-┃⋄ 🕒 *Hora*: %time
-┃⋄ 🗓 *Fecha*: %date
-┃⋄ 📅 *Día*: %week
+*┏━「꧁༺joKeR༻꧂」━⊜*
+┃⋄ 👋 *Привет: %taguser!!*
+┃⋄ 🕒 *Время*: %time
+┃⋄ 🗓 *Дата*: %date
+┃⋄ 📅 *День недели*: %week
 ┗━━◘
 %readmore`.trimStart(),
   header: '*┏━⊜「 %category 」*',
@@ -23,29 +23,29 @@ let handler = async (m, { conn, usedPrefix: _p, args, command, __dirname }) => {
   if (!arrayMenu.includes(teks)) teks = '404'
   if (!args[0]) teks = '404'
   if (teks == 'all') tags = {
-    'main': 'Menús📒',
-  'info': 'Información👨‍💻',
-  'search': 'Busquedas🔎',
-  'game': 'Juegos🕹️',
-  'xp': 'Nivel Y Economía⚖️',
-  'rpg': 'RPG⚔',
-  'rg': 'Registro🗃️',
-  'sticker': 'Sticker🏞️',
+    'main': 'Меню📒',
+  'info': 'Информация👨‍💻',
+  'search': 'Поиск🔎',
+  'game': 'Игры🕹️',
+  'xp': 'Конвертеры⚖️',
+  'rpg': 'РПГ⚔',
+  'rg': 'Регистация🗃️',
+  'sticker': 'Стикеры🏞️',
   'frases': 'Frases🥀',
-   'img': 'Imágenes🪴',
-  'group': 'Grupo👻',
-  'logo': 'Maker Y Logos📝',
-  'nable': 'Des/Activar opciones⚙️', 
-  'premium': 'Premium🪪',
-  'nime': 'Anime㊗',
-  'downloader': 'Descargas📥',
-  'tools': 'Herramientas🧰',
+   'img': 'Изображения🪴',
+  'group': 'Меню групп👻',
+  'logo': 'Логотипы📝',
+  'nable': 'Включение/Выключение функций⚙️', 
+  'premium': 'Премиум🪪',
+  'nime': 'Аниме㊗',
+  'downloader': 'Загрузчик📥',
+  'tools': 'Инструменты🧰',
   'fun': 'Diversión🎭',
-  'database': 'Base de Datos🗄️',
-  'nsfw': 'Nsfw🔞', 
-  'owner': 'Creador📌', 
+  'database': 'База данных🗄️',
+  'nsfw': '18+🔞', 
+  'owner': 'Меню создателя📌', 
   'advanced': 'Avanzado🖥️',
-  'audio': 'Efecto de Audios🔊',
+  'audio': 'Аудио- эффекты🔊',
   'vote': 'Votaciones🗳',
   }
   if (teks == 'game') tags = {
